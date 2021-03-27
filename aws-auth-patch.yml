@@ -4,47 +4,19 @@ data:
     - groups:
       - system:bootstrappers
       - system:nodes
-      rolearn: arn:aws:iam::100290418358:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-ZGRJG06W8KK8
-      username: system:node:{{EC2PrivateDNSName}}
+      rolearn: arn:aws:iam::654747298366:role/eksctl-simple-jwt-api-nodegroup-n-NodeInstanceRole-139IM1PBSSSLX
+      username: system:node:{{EC2PrivateDNSName}}  
     - groups:
       - system:masters
-      rolearn: arn:aws:iam::100290418358:role/UdacityFlaskDeployCBKubectlRole
-      username: build
+      rolearn: arn:aws:iam::654747298366:role/UdacityFlaskDeployCBKubectlRole
+      username: build      
   mapUsers: |
     []
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2021-03-22T12:34:04Z"
-  managedFields:
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data: {}
-      f:metadata:
-        f:annotations:
-          .: {}
-          f:kubectl.kubernetes.io/last-applied-configuration: {}
-    manager: kubectl-client-side-apply
-    operation: Update
-    time: "2021-03-22T12:34:04Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        f:mapUsers: {}
-    manager: kubectl-patch234
-    operation: Update
-    time: "2021-03-22T13:10:51Z"
-  - apiVersion: v1
-    fieldsType: FieldsV1
-    fieldsV1:
-      f:data:
-        f:mapRoles: {}
-    manager: kubectl-patch
-    operation: Update
-    time: "2021-03-24T11:48:08Z"
+  creationTimestamp: "2021-03-27T15:48:50Z"
   name: aws-auth
   namespace: kube-system
-  resourceVersion: "75097"
+  resourceVersion: "934"
   selfLink: /api/v1/namespaces/kube-system/configmaps/aws-auth
-  uid: 8f5458f0-b77d-4b74-be57-57514a274cca
+  uid: 9d1b9eba-31f1-4655-9e12-7418339291c8
